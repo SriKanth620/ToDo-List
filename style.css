@@ -1,0 +1,130 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    height: 100vh;
+    width: 100% - 1rem;
+    margin: 2rem 1rem;
+    font-family: sans-serif;
+    background-color: #374151;
+    color: #6B7280;
+}
+header {
+    margin-bottom: 1.3rem;
+}
+form input {
+    min-width: 11rem;
+    height: 2rem;
+    margin: .8rem 0rem;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-weight:bolder;
+    border: none;
+    background-color: #1F2937;
+    color: #6B7280;
+}
+form button{
+    margin-left: .5rem;
+    border: none;
+    font-weight:bolder;
+    font-size: 1.2rem;
+    background: -webkit-linear-gradient(#f84ca2,#8e5ffc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+form button:hover {
+    color: #6B7280;
+    text-decoration: underline;
+}
+form button:active{
+    color: black;
+    font-size: 1.3rem;
+}
+.container {
+    width: 100% -1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box {
+    height: 2rem;
+    margin: .8rem 0.1rem;
+    padding: 5px 5px;
+    border-radius: 15px;
+    border: none;
+    background-color: #111827;
+    max-width: 30rem;
+}
+.box input{
+    border: none;
+    background-color: transparent;
+    margin-top: .3rem;
+    height: 1.3rem;
+    width: 6rem;
+    color: white;
+    font-weight: bolder;
+}
+.box button{
+    background-color: transparent;
+    border: none;
+    font-weight: bolder;
+    margin-right: .5rem;
+}
+.done {
+    color: green;
+}
+.edit {
+    background: -webkit-linear-gradient(#fe4da5,#8e5eff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.delete{
+    color: rgb(243, 9, 9);
+}
+.delete:active{
+    color: rgb(43, 33, 33);
+}
+.done:active{
+    color: rgb(27, 40, 26);
+}
+.edit:active{
+    color: rgb(54, 37, 52);
+    font-size: 1rem;
+}
+footer p{
+    /* position: fixed;
+    left: 3%;
+    bottom: 0;
+    width: 100% - 1rem; */
+    text-align: center;
+    color: #6B7280;
+    padding-bottom: 1rem;
+    margin-top: 7rem;
+}
+@media screen and (min-width: 500px) {
+    .box input{
+        width: 12rem;
+    }
+}
+@media screen and (min-width: 800px) 
+{
+    body {
+        text-align: center;
+        margin-top: 6rem;
+        /* overflow: hidden; */
+    }
+    form input {
+        min-width: 30rem;
+    }
+    .box {
+        min-width: 25rem;
+    }
+    form input {
+        margin-left: 6rem;
+    }
+}
+.box input.taskinput.strike{
+    text-decoration: line-through;
+}
